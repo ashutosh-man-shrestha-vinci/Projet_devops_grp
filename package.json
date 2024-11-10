@@ -2,7 +2,7 @@
   "name": "projet_devops_grp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jasmine"
   },
@@ -12,6 +12,6 @@
 
   "devDependencies": {
 
-    "jasmine": "5.4.0"
+    "jasmine": "^5.4.0"
   }
 }

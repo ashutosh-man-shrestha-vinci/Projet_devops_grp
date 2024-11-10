@@ -28,6 +28,9 @@ export class BerlinClock {
         return 'R'.repeat(lampsOn).padEnd(4, '0');
     }
 
-   
+    secondsLamp(seconds) {
+        // Lampe qui définit les secondes : jaune si pair, éteinte si impair
+        return seconds % 2 === 0 ? 'R' : '0';
+    }
 
 }

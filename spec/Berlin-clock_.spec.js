@@ -31,4 +31,11 @@ describe("Berlin Clock Tests", function() {
         expect(clock.fiveHours(23)).toBe('RRRR');
     });
 
+    it("should return 'Y' for even seconds", function() {
+        expect(clock.secondsLamp(0)).toBe('R');
+        expect(clock.secondsLamp(2)).toBe('R');
+        expect(clock.secondsLamp(1)).toBe('0');
+    });
+
+    
 });

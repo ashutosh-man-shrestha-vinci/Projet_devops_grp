@@ -22,6 +22,12 @@ export class BerlinClock {
         return 'R'.repeat(lampsOn).padEnd(4, '0');
     }
 
+    fiveHours(hours) {
+        // 5 heure : lampe rouge = 1 heure
+        const lampsOn = Math.floor(hours / 5);
+        return 'R'.repeat(lampsOn).padEnd(4, '0');
+    }
+
    
 
 }

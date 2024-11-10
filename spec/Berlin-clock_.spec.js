@@ -17,4 +17,11 @@ describe("Berlin Clock Tests", function() {
         expect(clock.fiveMinutes(59)).toBe('YYRYYRYYRYY');
     });
 
+    it("should display the correct single-hour", function() {
+        expect(clock.singleHours(0)).toBe('0000');
+        expect(clock.singleHours(2)).toBe('RR00');
+        expect(clock.singleHours(4)).toBe('RRRR');
+        expect(clock.singleHours(23)).toBe('RRR0');
+    });
+
 });

@@ -11,9 +11,15 @@ export class BerlinClock {
         const lampsOn = Math.floor(minutes / 5);
         let lamps = '';
         for (let i = 1; i <= 11; i++) {
-            lamps += i <= lampsOn ? (i % 3 === 0 ? 'R' : 'Y') : '0';
+            lamps += i <= lampsOn ? (i % 3 === 0 ? 'R' : 'Y') : '0'; // le ? est un if et le : est un else
         }
         return lamps;
+    }
+
+    singleHours(hours) {
+        // 1 heure : lampe rouge = 1 heure
+        const lampsOn = hours % 5;
+        return 'R'.repeat(lampsOn).padEnd(4, '0');
     }
 
 }

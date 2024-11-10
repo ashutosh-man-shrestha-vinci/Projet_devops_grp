@@ -22,10 +22,6 @@ export class BerlinClock {
         return 'R'.repeat(lampsOn).padEnd(4, '0');
     }
 
-    fiveHours(hours) {
-        // Ligne des blocs de 5 heures : chaque lampe rouge représente 5 heures
-        const lampsOn = Math.floor(hours / 5);
-        return 'R'.repeat(lampsOn).padEnd(4, '0');
-    }
+   
 
 }

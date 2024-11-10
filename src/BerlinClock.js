@@ -33,4 +33,14 @@ export class BerlinClock {
         return seconds % 2 === 0 ? 'R' : '0';
     }
 
+
+    berlinClock(hours, minutes, seconds) {
+        return [
+            this.secondsLamp(seconds),
+            this.fiveHours(hours),
+            this.singleHours(hours),
+            this.fiveMinutes(minutes),
+            this.singleMinutes(minutes)
+        ];
+    }
 }

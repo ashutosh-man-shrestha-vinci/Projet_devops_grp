@@ -11,7 +11,7 @@ export class BerlinClock {
         const lampsOn = Math.floor(minutes / 5); //ex: 23/5 = 4.6 --> reste de 0.6 alors on récup que 4 avec l'arrondis bas
         let lamps = '';
         for (let i = 1; i <= 11; i++) {
-            lamps += i <= lampsOn ? (i % 3 === 0 ? 'R' : 'Y') : '0'; // le ? est un if et le : est un else
+            lamps += i <= lampsOn ? (i % 3 === 0 ? 'R' : 'Y') : '0'; // le ? est un if et le : est un else -- Ashu | ok!
         }
         return lamps;
     }
